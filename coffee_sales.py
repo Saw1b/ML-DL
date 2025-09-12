@@ -8,7 +8,7 @@ import streamlit as st
 from dotenv import load_dotenv
 from sklearn.preprocessing import StandardScaler
 
-# ========== CONFIG ==========
+# ========== CONFIG ==========#
 load_dotenv()
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyDDjFc-eTL8MbCQp3EK96ulw6uTwT4ookQ")
@@ -126,3 +126,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
