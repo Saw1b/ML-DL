@@ -4,7 +4,7 @@ import pickle
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-# Load trained model
+# Load trained model#
 loaded_model = pickle.load(open('Coffe_sales.sav', 'rb'))
 
 # --- Step 1: Ensure scaler.sav exists ---
@@ -45,3 +45,4 @@ new_data_scaled = scaler.transform(new_data)
 prediction = loaded_model.predict(new_data_scaled)
 
 print("Prediction:", prediction)
+
